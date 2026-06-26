@@ -1,0 +1,42 @@
+.nav {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  padding: 0.875rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.logo span {
+  color: var(--text-primary);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.user {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 640px) {
+  .user {
+    display: none;
+  }
+}

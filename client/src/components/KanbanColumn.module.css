@@ -1,0 +1,38 @@
+.column {
+  background: var(--bg-tertiary);
+  border-radius: var(--radius);
+  padding: 1rem;
+  min-height: 200px;
+  flex: 1;
+  min-width: 260px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+
+.count {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+}
+
+.empty {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 1.5rem 0.5rem;
+}
