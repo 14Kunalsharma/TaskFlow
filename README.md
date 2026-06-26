@@ -100,7 +100,7 @@ Terminal 2 (frontend):
 npm run dev:client
 ```
 
-Open [http://localhost:5173](http://localhost:5173)
+Open [https://task-flow-eight-woad.vercel.app/](https://task-flow-eight-woad.vercel.app/)
 
 ## AI Feature
 
@@ -116,7 +116,7 @@ When creating or editing a task, click **Suggest estimate**. The backend sends t
 
 ## API Documentation
 
-Base URL: `http://localhost:5000/api`
+Base URL: `https://taskflow-6w37.onrender.com/`
 
 ### Auth
 
@@ -185,16 +185,34 @@ Use a hosted PostgreSQL provider (Neon, Supabase, Railway Postgres) and set `DAT
 
 ## Live Demo
 
-| Service | URL |
-|---------|-----|
-| Frontend | _Add after deploying to Vercel_ |
-| Backend | _Add after deploying to Render/Railway_ |
+| Service | URL                                      |
+|---------|------------------------------------------|
+| Frontend | https://task-flow-eight-woad.vercel.app/ |
+| Backend | https://taskflow-6w37.onrender.com/      |
 
 **Test credentials:** _Create after deployment or use your registered account_
 
 ## Screenshots
 
-_Add screenshots of Login, Dashboard, Board view, and Mobile view after running locally._
+## Login Page
+
+![Login Page](screenshots/login.png)
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### Board
+
+![Board](screenshots/board.png)
+
+### Task
+
+![Task](screenshots/task.png)
+
+### AI
+
+![AI](screenshots/ai.png)
 
 ## Known Limitations & Future Improvements
 
@@ -206,4 +224,4 @@ _Add screenshots of Login, Dashboard, Board view, and Mobile view after running 
 
 ## License
 
-MIT — built as a full-stack developer take-home assignment.
+MIT — built by me as a full-stack developer take-home assignment with ❤️.
