@@ -35,73 +35,6 @@ taskflow/
 └── README.md
 ```
 
-## Local Setup
-
-### Prerequisites
-
-- Node.js 18+
-- PostgreSQL database (local or hosted — e.g. Neon, Supabase)
-
-### 1. Clone & install
-
-```bash
-git clone <your-repo-url>
-cd taskflow
-npm run install:all
-```
-
-### 2. Configure environment
-
-**Server** — copy and fill in `server/.env`:
-
-```bash
-cp server/.env.example server/.env
-```
-
-```env
-DATABASE_URL=postgresql://user:pass@host:5432/taskflow
-JWT_SECRET=your-secret-key-change-in-production
-JWT_EXPIRES_IN=7d
-GEMINI_API_KEY=your-gemini-key
-PORT=5000
-CLIENT_URL=http://localhost:5173
-```
-
-**Client** — copy and fill in `client/.env`:
-
-```bash
-cp client/.env.example client/.env
-```
-
-```env
-VITE_API_URL=http://localhost:5000/api
-```
-
-### 3. Run database migrations
-
-```bash
-cd server
-npx prisma migrate deploy
-# or for development:
-npx prisma migrate dev
-```
-
-### 4. Start the app
-
-Terminal 1 (backend):
-
-```bash
-npm run dev:server
-```
-
-Terminal 2 (frontend):
-
-```bash
-npm run dev:client
-```
-
-Open [https://task-flow-eight-woad.vercel.app/](https://task-flow-eight-woad.vercel.app/)
-
 ## AI Feature
 
 When creating or editing a task, click **Suggest estimate**. The backend sends the task title and description to **Google Gemini** and returns:
@@ -190,7 +123,6 @@ Use a hosted PostgreSQL provider (Neon, Supabase, Railway Postgres) and set `DAT
 | Frontend | https://task-flow-eight-woad.vercel.app/ |
 | Backend | https://taskflow-6w37.onrender.com/      |
 
-**Test credentials:** _Create after deployment or use your registered account_
 
 ## Screenshots
 
